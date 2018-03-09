@@ -13,6 +13,7 @@ const createStoreWithMiddleware = applyMiddleware()(createStore);
 // elevating this object to the console.
 window.store = store;
 window.addArticle = addArticle;
+// window.selectPerson = selectPerson;
 
 ReactDOM.render(
     // Provider makes the React app aware of the Store

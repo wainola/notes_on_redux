@@ -6,7 +6,7 @@ current state.
 It is best to wrap everything into a function. That function is called an action creator.
 */
 
-import { ADD_ARTICLE } from '../constants/action-types';
+import { ADD_ARTICLE, SELECT_PERSON } from '../constants/action-types';
 
 export const addArticle = article => (
     {
@@ -14,3 +14,11 @@ export const addArticle = article => (
         payload: article
     }
 );
+
+// Returning with arrow function literal object
+// export const selectPerson = person => (
+//     {
+//         type: SELECT_PERSON,
+//         payload: person
+//     }
+// );
